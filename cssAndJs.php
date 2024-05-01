@@ -35,6 +35,8 @@ a {
 .nav .logo {
   font-size: 22px;
   font-weight: 500;
+  display: grid;
+  place-items: center;
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -56,9 +58,6 @@ a {
   .nav {
     padding: 15px 100px;
   }
-  .nav .search-box {
-    right: 150px;
-  }
 }
 @media screen and (max-width: 950px) {
   .nav {
@@ -69,7 +68,6 @@ a {
     max-width: 400px;
   }
 }
-@media screen and (max-width: 768px) {
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
@@ -115,7 +113,7 @@ a {
     transform: translateX(50%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-}  
+
 
 </style>
 
