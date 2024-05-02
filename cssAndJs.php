@@ -17,7 +17,7 @@ body{
   left: 0;
   width: 100%;
   padding: 15px 200px;
-  background: #4a98f7;
+  background: #010101;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .nav,
@@ -35,12 +35,15 @@ a {
 .nav .logo {
   font-size: 22px;
   font-weight: 500;
-  display: grid;
-  place-items: center;
+  display: block;
+  align-items: center;
 }
 .nav .nav-links {
   column-gap: 20px;
   list-style: none;
+}
+.nav .nav-links a:hover{
+  color: #010101;
 }
 .nav .nav-links a {
   transition: all 0.2s linear;
@@ -85,7 +88,7 @@ a {
     padding-top: 100px;
     row-gap: 30px;
     flex-direction: column;
-    background-color: #11101d;
+    background-color: #500000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     z-index: 100;
@@ -101,7 +104,7 @@ a {
   .nav .navCloseBtn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 240px;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
@@ -113,8 +116,9 @@ a {
     transform: translateX(50%);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-
-
+  .log{
+    margin: auto;
+  }
 </style>
 
 <script>
@@ -127,6 +131,5 @@ a {
     });
     navCloseBtn.addEventListener("click", () => {
     nav.classList.remove("openNav");
-    });
-    
+    }); 
 </script>

@@ -1,6 +1,6 @@
 <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="#" class="logo">CodingLab</a>
+      <div class="log"><a href="#" class="logo">CodingLab</a></div>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
